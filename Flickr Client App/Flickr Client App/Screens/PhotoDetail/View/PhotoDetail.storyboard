@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="PhotoDetailViewController" customModule="Flickr_Client_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kXW-iq-tSa">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="560"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="560" id="ikK-8U-FUh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RYg-Bs-DWD">
+                                <rect key="frame" x="16" y="568" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="dUt-tM-uJ0"/>
+                                    <constraint firstAttribute="width" constant="48" id="iLb-Kt-iFr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSd-7f-beI">
+                                <rect key="frame" x="72" y="568" width="301" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="d9l-W1-DZ4"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="saq-Br-AHq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBC-5b-f7y">
+                                <rect key="frame" x="16" y="624" width="357" height="194"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nBC-5b-f7y" firstAttribute="top" secondItem="RYg-Bs-DWD" secondAttribute="bottom" constant="8" symbolic="YES" id="51h-v4-qGP"/>
+                            <constraint firstItem="CSd-7f-beI" firstAttribute="top" secondItem="kXW-iq-tSa" secondAttribute="bottom" constant="8" symbolic="YES" id="6Mq-96-cmg"/>
+                            <constraint firstItem="RYg-Bs-DWD" firstAttribute="top" secondItem="kXW-iq-tSa" secondAttribute="bottom" constant="8" symbolic="YES" id="84H-fR-lAB"/>
+                            <constraint firstItem="CSd-7f-beI" firstAttribute="leading" secondItem="RYg-Bs-DWD" secondAttribute="trailing" constant="8" symbolic="YES" id="9fL-ju-QlZ"/>
+                            <constraint firstItem="nBC-5b-f7y" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="Im0-pQ-QZN"/>
+                            <constraint firstItem="RYg-Bs-DWD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Rbm-Wf-emQ"/>
+                            <constraint firstItem="kXW-iq-tSa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="a16-30-5JC"/>
+                            <constraint firstItem="CSd-7f-beI" firstAttribute="top" secondItem="kXW-iq-tSa" secondAttribute="bottom" constant="8" symbolic="YES" id="bfw-PZ-vJx"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CSd-7f-beI" secondAttribute="trailing" constant="20" id="coS-n8-yej"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nBC-5b-f7y" secondAttribute="trailing" constant="20" id="eO1-F3-88f"/>
+                            <constraint firstItem="nBC-5b-f7y" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="f1Z-lE-gzZ"/>
+                            <constraint firstItem="CSd-7f-beI" firstAttribute="leading" secondItem="RYg-Bs-DWD" secondAttribute="trailing" constant="8" symbolic="YES" id="gdH-q2-0ih"/>
+                            <constraint firstItem="kXW-iq-tSa" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="kUE-jt-Bgo"/>
+                            <constraint firstItem="kXW-iq-tSa" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="zQG-ff-lY7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="nBC-5b-f7y" id="HlX-Of-1XP"/>
+                        <outlet property="imageView" destination="kXW-iq-tSa" id="Ck8-ZN-ZO3"/>
+                        <outlet property="ownerImageView" destination="RYg-Bs-DWD" id="9fC-lg-vsm"/>
+                        <outlet property="ownerNameLabel" destination="CSd-7f-beI" id="Yfd-27-cbk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.42748091603053" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
