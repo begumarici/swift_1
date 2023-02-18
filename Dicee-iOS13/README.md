@@ -1,3 +1,10 @@
+# My dice practice from Dr. Angela Yu's lectures.
+
+
+
+
+--- 
+
 ![App Brewery Banner](Documentation/AppBreweryBanner.png)
 
 # Dicee
