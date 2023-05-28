@@ -1,7 +1,11 @@
-
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
-
 #  Destini
+
+I practised it from Dr. Angela Yu's lectures. You can see the information about the project in the section below. Here is a screenshot of the app
+
+
+
+<img src="https://github.com/begumarici/swift_1/assets/72032853/04fa4a32-8809-45fb-8570-bf6fa6097f05" alt="screenshot2" width="200"  hspace="130"/>
+
 
 ## Our Goal
 
@@ -48,4 +52,4 @@ In this app, you will be creating a “choose your own adventure” game similar
 
 >This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
 
-![End Banner](Documentation/readme-end-banner.png)
+
